@@ -1,0 +1,19 @@
+.outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .form {
+    padding: 0 6px;
+
+    :global {
+      .za-cell {
+        background-color: transparent;
+
+        &::after {
+          border-top: none;
+        }
+      }
+    }
+  }
+}
